@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>II BIMESTRE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>II BIMESTRE</h1>
+        <div class="content-button">
+            <a href="#" class="button small" onclick="showPage('main')">Contenidos</a>
+        </div>
+        <div class="topics">
+            <a href="#" class="button large" onclick="showPage('tiposDeSoftware')">Tipos de Software</a>
+            <a href="#" class="button large" onclick="showPage('placaBase')">Placa Base</a>
+        </div>
+      <div class="content-button">
+            <a href="BimestreII.html" class="button small" onclick="go.(BimestreII.html)">Página principal</a>
+        </div>
+    </div>
+
+    <!-- Página Principal -->
+    <section id="main" class="active">
+        <h2 class="section-title">II BIMESTRE</h2>
+        <p>A continuación se enumeran los temas del segundo bimestre:</p>
+        <ol>
+            <li><a href="#" onclick="showPage('tiposDeSoftware')">Tipos de Software</a></li>
+            <li><a href="#" onclick="showPage('placaBase')">Placa Base</a></li>
+        </ol>
+    </section>
+
+    <!-- Página Tipos de Software -->
+    <section id="tiposDeSoftware">
+        <h2 class="section-title">Tipos de Software</h2>
+        <p>El software se clasifica en varias categorías según su funcionalidad y uso. A continuación, se describen los tipos principales:</p>
+        <ul>
+            <li><strong>Software de Sistema:</strong> Incluye el sistema operativo y utilidades que permiten que el hardware y el software se comuniquen y funcionen correctamente. Ejemplos: Windows, macOS, Linux.</li>
+            <li><strong>Software de Aplicación:</strong> Programas diseñados para realizar tareas específicas para el usuario. Ejemplos: Microsoft Office, Adobe Photoshop, navegadores web.</li>
+            <li><strong>Software de Desarrollo:</strong> Herramientas utilizadas por los programadores para crear, depurar y mantener otros software. Ejemplos: Visual Studio, Eclipse, Git.</li>
+            <li><strong>Software de Red:</strong> Permite la comunicación y gestión de redes. Ejemplos: herramientas de administración de red, software de firewall.</li>
+            <li><strong>Software de Seguridad:</strong> Diseñado para proteger el sistema y los datos contra amenazas. Ejemplos: antivirus, software de cifrado, firewall.</li>
+        </ul>
+    </section>
+
+    <!-- Página Placa Base -->
+    <section id="placaBase">
+        <h2 class="section-title">Placa Base</h2>
+        <p>La placa base, también conocida como motherboard o placa madre, es un componente fundamental en cualquier sistema informático. Aquí se detallan sus características y funciones principales:</p>
+        <ul>
+            <li><strong>Definición:</strong> La placa base es el circuito principal que conecta todos los componentes del ordenador, como el procesador, la memoria RAM, las unidades de almacenamiento y las tarjetas de expansión.</li>
+            <li><strong>Componentes Clave:</strong> Incluye el chipset, ranuras de expansión (PCIe, PCI), conectores de alimentación, puertos de entrada/salida (USB, HDMI), y la BIOS/UEFI.</li>
+            <li><strong>Funciones:</strong> Facilita la comunicación entre el procesador, la memoria y otros periféricos, controla el flujo de datos y proporciona las conexiones necesarias para otros dispositivos.</li>
+            <li><strong>Tipos de Placas Base:</strong> Existen diferentes formatos (ATX, Micro-ATX, Mini-ITX) que determinan el tamaño y la cantidad de componentes que se pueden conectar.</li>
+            <li><strong>Importancia:</strong> Es crucial para el funcionamiento del sistema, ya que alberga y coordina todos los componentes esenciales del ordenador.</li>
+        </ul>
+    </section>
+
+    <script>
+        function showPage(page) {
+            // Ocultar todas las secciones
+            document.querySelectorAll('section').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            // Mostrar la sección seleccionada
+            document.getElementById(page).classList.add('active');
+        }
+    </script>
+</body>
+</html>
